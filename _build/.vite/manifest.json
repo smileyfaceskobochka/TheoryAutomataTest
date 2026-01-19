@@ -1,0 +1,74 @@
+{
+  "_HttpStatusCode-DjTx85av.js": {
+    "file": "assets/HttpStatusCode-DjTx85av.js",
+    "name": "HttpStatusCode"
+  },
+  "_index-CiCyThG4.js": {
+    "file": "assets/index-CiCyThG4.js",
+    "name": "index"
+  },
+  "_preload-helper-BazOrpqW.js": {
+    "file": "assets/preload-helper-BazOrpqW.js",
+    "name": "preload-helper"
+  },
+  "src/questions.json": {
+    "file": "assets/questions-CkprNcsT.js",
+    "name": "questions",
+    "src": "src/questions.json",
+    "isDynamicEntry": true
+  },
+  "src/routes/[...404].tsx?pick=default&pick=$css": {
+    "file": "assets/_...404_-B_OJ_adG.js",
+    "name": "_...404_",
+    "src": "src/routes/[...404].tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-CiCyThG4.js",
+      "_HttpStatusCode-DjTx85av.js"
+    ]
+  },
+  "src/routes/about.tsx?pick=default&pick=$css": {
+    "file": "assets/about-zJR9YwK7.js",
+    "name": "about",
+    "src": "src/routes/about.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-CiCyThG4.js"
+    ]
+  },
+  "src/routes/index.tsx?pick=default&pick=$css": {
+    "file": "assets/index-DXEhNRL8.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-BazOrpqW.js",
+      "_index-CiCyThG4.js"
+    ],
+    "dynamicImports": [
+      "src/questions.json"
+    ]
+  },
+  "virtual:$vinxi/handler/client": {
+    "file": "assets/client-BRV1L9Mt.js",
+    "name": "client",
+    "src": "virtual:$vinxi/handler/client",
+    "isEntry": true,
+    "imports": [
+      "_index-CiCyThG4.js",
+      "_preload-helper-BazOrpqW.js",
+      "_HttpStatusCode-DjTx85av.js"
+    ],
+    "dynamicImports": [
+      "src/routes/[...404].tsx?pick=default&pick=$css",
+      "src/routes/about.tsx?pick=default&pick=$css",
+      "src/routes/index.tsx?pick=default&pick=$css"
+    ],
+    "css": [
+      "assets/client-wfAhlvs9.css"
+    ]
+  }
+}
