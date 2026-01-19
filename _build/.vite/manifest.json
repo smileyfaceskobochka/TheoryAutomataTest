@@ -39,7 +39,7 @@
     ]
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-DXEhNRL8.js",
+    "file": "assets/index-BCc5xU3j.js",
     "name": "index",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -52,8 +52,18 @@
       "src/questions.json"
     ]
   },
+  "src/routes/lectures.tsx?pick=default&pick=$css": {
+    "file": "assets/lectures-HZZfBsAP.js",
+    "name": "lectures",
+    "src": "src/routes/lectures.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-CiCyThG4.js"
+    ]
+  },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-BRV1L9Mt.js",
+    "file": "assets/client-BHRkK8Kt.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
@@ -65,10 +75,11 @@
     "dynamicImports": [
       "src/routes/[...404].tsx?pick=default&pick=$css",
       "src/routes/about.tsx?pick=default&pick=$css",
-      "src/routes/index.tsx?pick=default&pick=$css"
+      "src/routes/index.tsx?pick=default&pick=$css",
+      "src/routes/lectures.tsx?pick=default&pick=$css"
     ],
     "css": [
-      "assets/client-wfAhlvs9.css"
+      "assets/client-Byuwptl3.css"
     ]
   }
 }
