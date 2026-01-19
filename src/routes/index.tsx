@@ -103,7 +103,13 @@ export default function Home() {
 
       <div class="max-w-6xl mx-auto">
         {/* Navigation */}
-        <nav class="flex justify-end mb-4">
+        <nav class="flex justify-end gap-6 mb-4">
+          <a
+            href="/lectures"
+            class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200"
+          >
+            📚 Конспекты лекций
+          </a>
           <a
             href="/about"
             class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200"

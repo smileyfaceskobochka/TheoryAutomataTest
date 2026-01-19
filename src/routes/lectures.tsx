@@ -1,0 +1,74 @@
+import { Title } from "@solidjs/meta";
+
+export default function Lectures() {
+  return (
+    <main class="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-8 px-4">
+      <Title>Конспекты лекций - Теория автоматов</Title>
+
+      <div class="max-w-6xl mx-auto">
+        {/* Navigation */}
+        <nav class="flex justify-end mb-4">
+          <a
+            href="/"
+            class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200"
+          >
+            ← На главную
+          </a>
+        </nav>
+
+        <div class="text-center mb-8">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Конспекты лекций
+          </h1>
+          <p class="text-xl text-gray-600 font-medium">Теория автоматов и формальных языков</p>
+        </div>
+
+        {/* PDF Viewer */}
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">
+            Теория автоматов. Часть I
+          </h2>
+
+          <div class="w-full h-[80vh] border border-gray-300 rounded-lg overflow-hidden">
+            <iframe
+              src="/Теория_автоматов_часть_I_Конспект_лекций_В_Ю_Мельцов.pdf"
+              class="w-full h-full"
+              title="Конспект лекций по теории автоматов"
+            >
+              <p class="p-8 text-center text-gray-600">
+                Ваш браузер не поддерживает просмотр PDF файлов.
+                <br />
+                <a
+                  href="/Теория_автоматов_часть_I_Конспект_лекций_В_Ю_Мельцов.pdf"
+                  download="Теория_автоматов_часть_I_Конспект_лекций_В_Ю_Мельцов.pdf"
+                  class="text-blue-600 hover:text-blue-800 underline mt-4 inline-block"
+                >
+                  Скачать PDF файл
+                </a>
+              </p>
+            </iframe>
+          </div>
+
+          <div class="mt-6 text-center">
+            <a
+              href="/Теория_автоматов_часть_I_Конспект_лекций_В_Ю_Мельцов.pdf"
+              download="Теория_автоматов_часть_I_Конспект_лекций_В_Ю_Мельцов.pdf"
+              class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
+            >
+              📄 Скачать конспект лекций
+            </a>
+          </div>
+        </div>
+
+        {/* Additional Info */}
+        <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
+          <h3 class="text-lg font-semibold text-blue-800 mb-2">Информация о конспекте</h3>
+          <p class="text-blue-700">
+            Конспект лекций по теории автоматов и формальных языков.
+            Автор: В. Ю. Мельцов.
+          </p>
+        </div>
+      </div>
+    </main>
+  );
+}
