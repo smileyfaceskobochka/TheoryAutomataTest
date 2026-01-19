@@ -27,6 +27,9 @@ jobs:
     - name: Build
       run: bun run build
 
+    - name: Copy custom HTML
+      run: cp index.html .output/public/
+
     - name: Deploy to GitHub Pages
       if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v4
